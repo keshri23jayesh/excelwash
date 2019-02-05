@@ -1,0 +1,349 @@
+[09-Nov-2018 08:26:43 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 08:26:43 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:26:43 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 08:27:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 08:27:10 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:27:10 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 08:32:54 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 08:32:54 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:32:54 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 08:33:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 08:33:39 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:33:39 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 08:35:35 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 08:35:35 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:35:35 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 08:36:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 08:36:07 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 08:36:07 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 13:41:36 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 13:41:36 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 13:41:36 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 13:42:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 13:42:10 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 13:42:10 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 13:53:03 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[09-Nov-2018 13:53:03 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 13:53:03 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 13:53:03 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 13:53:32 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[09-Nov-2018 13:53:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 13:53:32 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 13:53:32 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 23:55:39 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Nov-2018 23:55:39 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 23:55:39 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Nov-2018 23:56:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Nov-2018 23:56:14 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Nov-2018 23:56:14 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 00:09:00 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 00:09:00 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 00:09:00 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 00:10:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 00:10:49 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 00:10:49 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:02:48 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 01:02:48 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:02:48 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:03:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 01:03:05 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:03:05 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:03:41 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 01:03:41 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 01:03:41 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:03:41 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:03:58 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 01:03:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 01:03:58 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:03:58 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:04:41 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 01:04:41 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:04:41 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:05:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 01:05:00 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:05:00 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:06:38 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 01:06:38 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:06:38 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 01:07:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 01:07:03 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 01:07:03 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 05:49:04 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 05:49:04 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 05:49:04 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 05:54:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 05:54:10 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 05:54:10 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 07:37:55 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 07:37:55 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 07:37:55 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 07:38:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 07:38:22 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 07:38:22 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 13:36:51 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 13:36:51 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 13:36:51 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 13:36:51 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 13:37:34 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 13:37:34 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 13:37:34 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 13:37:34 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 13:37:49 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 13:37:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 13:37:49 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 13:37:49 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 15:05:48 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 15:05:48 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 15:05:48 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 15:05:48 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 15:06:03 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 15:06:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 15:06:03 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 15:06:03 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 15:17:57 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 15:17:57 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 15:17:57 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 15:17:57 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 15:18:23 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 15:18:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 15:18:23 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 15:18:23 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 17:13:17 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 17:13:17 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Nov-2018 17:13:17 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 17:13:17 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Nov-2018 17:13:44 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Nov-2018 17:13:44 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Nov-2018 17:13:44 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Nov-2018 17:13:44 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 09:29:16 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 09:29:16 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[11-Nov-2018 09:29:16 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 09:29:16 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 09:30:03 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 09:30:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[11-Nov-2018 09:30:04 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 09:30:04 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 12:49:56 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 12:49:56 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[11-Nov-2018 12:49:56 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 12:49:56 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 12:50:11 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 12:50:11 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[11-Nov-2018 12:50:11 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 12:50:11 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 14:13:20 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 14:13:20 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[11-Nov-2018 14:13:20 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 14:13:20 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 14:14:01 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 14:14:01 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[11-Nov-2018 14:14:01 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 14:14:01 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[11-Nov-2018 14:14:20 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[11-Nov-2018 14:14:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[11-Nov-2018 14:14:21 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[11-Nov-2018 14:14:21 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 05:01:56 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[12-Nov-2018 05:01:56 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[12-Nov-2018 05:01:56 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 05:01:56 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 05:03:10 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[12-Nov-2018 05:03:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[12-Nov-2018 05:03:10 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 05:03:10 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 06:29:32 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[12-Nov-2018 06:29:32 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 06:29:32 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 06:29:47 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[12-Nov-2018 06:29:47 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 06:29:47 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 07:22:48 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[12-Nov-2018 07:22:48 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[12-Nov-2018 07:22:48 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 07:22:48 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Nov-2018 07:23:25 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[12-Nov-2018 07:23:25 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[12-Nov-2018 07:23:25 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Nov-2018 07:23:25 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 11:33:04 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[13-Nov-2018 11:33:04 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 11:33:04 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 11:34:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[13-Nov-2018 11:34:20 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 11:34:20 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 13:35:57 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[13-Nov-2018 13:35:57 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 13:35:57 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 13:36:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[13-Nov-2018 13:36:37 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 13:36:37 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 14:08:40 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[13-Nov-2018 14:08:40 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[13-Nov-2018 14:08:40 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 14:08:40 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[13-Nov-2018 14:08:59 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[13-Nov-2018 14:08:59 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[13-Nov-2018 14:08:59 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[13-Nov-2018 14:08:59 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Nov-2018 14:23:37 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[14-Nov-2018 14:23:37 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Nov-2018 14:23:37 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Nov-2018 19:06:03 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[14-Nov-2018 19:06:03 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Nov-2018 19:06:03 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Nov-2018 19:26:12 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[14-Nov-2018 19:26:12 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Nov-2018 19:26:12 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Nov-2018 19:26:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[14-Nov-2018 19:26:29 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Nov-2018 19:26:29 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[15-Nov-2018 07:16:35 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[15-Nov-2018 07:16:35 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Nov-2018 07:16:35 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[16-Nov-2018 10:44:24 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[16-Nov-2018 10:44:24 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[16-Nov-2018 10:44:24 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[16-Nov-2018 10:44:44 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[16-Nov-2018 10:44:44 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[16-Nov-2018 10:44:44 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[16-Nov-2018 10:44:44 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[16-Nov-2018 11:35:07 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[16-Nov-2018 11:35:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[16-Nov-2018 11:35:07 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[16-Nov-2018 11:35:07 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[21-Nov-2018 12:59:53 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[21-Nov-2018 12:59:53 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[21-Nov-2018 12:59:53 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[21-Nov-2018 13:00:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[21-Nov-2018 13:00:06 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[21-Nov-2018 13:00:06 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[22-Nov-2018 13:21:43 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[22-Nov-2018 13:21:43 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[22-Nov-2018 13:21:43 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[22-Nov-2018 13:21:45 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[22-Nov-2018 13:21:45 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[22-Nov-2018 13:21:45 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[22-Nov-2018 13:22:18 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[22-Nov-2018 13:22:18 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[22-Nov-2018 13:22:18 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[25-Nov-2018 17:13:27 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[25-Nov-2018 17:13:27 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[25-Nov-2018 17:13:27 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[25-Nov-2018 17:17:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[25-Nov-2018 17:17:02 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[25-Nov-2018 17:17:02 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 17:52:49 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 17:52:49 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 17:52:49 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 17:52:59 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 17:52:59 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 17:52:59 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 17:53:21 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 17:53:21 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 17:53:21 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 17:53:36 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Dec-2018 17:53:36 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 17:53:36 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 19:56:01 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 19:56:01 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 19:56:01 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 19:56:43 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Dec-2018 19:56:43 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 19:56:43 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 21:21:25 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[09-Dec-2018 21:21:25 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 21:21:25 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 21:21:25 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 21:22:08 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[09-Dec-2018 21:22:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Dec-2018 21:22:08 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 21:22:08 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 21:33:02 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 21:33:02 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 21:33:02 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 21:33:31 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[09-Dec-2018 21:33:31 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[09-Dec-2018 21:33:31 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 21:33:31 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[09-Dec-2018 21:34:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[09-Dec-2018 21:34:14 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[09-Dec-2018 21:34:14 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Dec-2018 03:24:32 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[10-Dec-2018 03:24:32 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Dec-2018 03:24:32 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Dec-2018 03:24:32 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Dec-2018 05:17:15 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[10-Dec-2018 05:17:15 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Dec-2018 05:17:15 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[10-Dec-2018 05:18:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[10-Dec-2018 05:18:02 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[10-Dec-2018 05:18:02 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Dec-2018 12:48:33 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[12-Dec-2018 12:48:33 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Dec-2018 12:48:33 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[12-Dec-2018 12:48:53 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[12-Dec-2018 12:48:53 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[12-Dec-2018 12:48:53 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Dec-2018 11:34:18 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[14-Dec-2018 11:34:18 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Dec-2018 11:34:18 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Dec-2018 11:35:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[14-Dec-2018 11:35:32 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Dec-2018 11:35:32 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Dec-2018 19:25:25 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[14-Dec-2018 19:25:25 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Dec-2018 19:25:25 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[14-Dec-2018 19:25:40 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[14-Dec-2018 19:25:40 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[14-Dec-2018 19:25:40 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[15-Dec-2018 07:11:26 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 105
+[15-Dec-2018 07:11:26 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:11:26 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[15-Dec-2018 07:12:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 07:12:07 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:12:07 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 111
+[15-Dec-2018 07:15:26 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:15:26 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:15:26 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:15:29 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:15:29 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:15:29 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:15:45 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 07:15:45 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:15:45 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:24:00 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[15-Dec-2018 07:24:00 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:24:00 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:24:00 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:24:11 UTC] PHP Notice:  Undefined index: pagename in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 7
+[15-Dec-2018 07:24:11 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 07:24:11 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:24:11 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:31:35 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:31:35 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:31:35 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:31:52 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 07:31:52 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:31:52 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:56:19 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:56:19 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:56:19 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:56:24 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:56:24 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:56:24 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 07:57:35 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 07:57:35 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 07:57:35 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 08:01:13 UTC] PHP Notice:  Undefined variable: email in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 106
+[15-Dec-2018 08:01:13 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 08:01:13 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[15-Dec-2018 11:26:11 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
+[15-Dec-2018 11:26:11 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
+[15-Dec-2018 11:26:11 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112

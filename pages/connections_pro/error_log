@@ -1,0 +1,5 @@
+[13-Dec-2018 13:00:17 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 113
+[13-Dec-2018 13:00:17 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 140
+[13-Dec-2018 13:11:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 590
+[13-Dec-2018 13:11:03 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 617
+[14-Dec-2018 11:05:51 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62

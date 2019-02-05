@@ -1,0 +1,21 @@
+[09-Dec-2018 21:26:35 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 34
+[09-Dec-2018 21:27:36 UTC] PHP Notice:  Undefined variable: e in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[09-Dec-2018 21:27:36 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[09-Dec-2018 21:34:20 UTC] PHP Notice:  Undefined variable: e in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[09-Dec-2018 21:34:20 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:18:13 UTC] PHP Notice:  Undefined variable: e in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:18:13 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:20:37 UTC] PHP Notice:  Undefined variable: e in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:20:37 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:20:59 UTC] PHP Notice:  Undefined variable: e in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[10-Dec-2018 05:20:59 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 21
+[12-Dec-2018 13:21:35 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 33
+[12-Dec-2018 13:23:13 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 34
+[12-Dec-2018 13:34:41 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/Transaction.php on line 58
+[12-Dec-2018 13:41:56 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/delete.php on line 32
+[12-Dec-2018 14:50:52 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/Transaction.php on line 58
+[12-Dec-2018 14:54:46 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/Transaction.php on line 58
+[15-Dec-2018 07:56:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/connections/multiple.php on line 593
+[15-Dec-2018 07:57:15 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/connections/multiple.php on line 593
+[15-Dec-2018 08:01:01 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/multiple.php on line 616
+[15-Dec-2018 11:36:22 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/users/connections/multiple.php on line 625

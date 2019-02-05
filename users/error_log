@@ -1,0 +1,45 @@
+[12-Nov-2018 20:37:28 UTC] PHP Notice:  Undefined index: table_name2 in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 83
+[12-Nov-2018 20:37:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/tedxbank/public_html/projects/admin/users/invoice.php:171
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/users/invoice.php(171): PDOStatement->execute()
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 171
+[12-Nov-2018 20:38:42 UTC] PHP Notice:  Undefined index: table_name2 in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 83
+[12-Nov-2018 20:38:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1' in /home/tedxbank/public_html/projects/admin/users/invoice.php:171
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/users/invoice.php(171): PDOStatement->execute()
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 171
+[12-Nov-2018 20:46:57 UTC] PHP Notice:  Undefined index: table_name2 in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 83
+[12-Nov-2018 20:46:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/tedxbank/public_html/projects/admin/users/invoice.php:172
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/users/invoice.php(172): PDOStatement->execute()
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 172
+[13-Nov-2018 15:27:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/tedxbank/public_html/projects/admin/users/own_cost.php:130
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/users/own_cost.php(130): PDOStatement->execute()
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/users/own_cost.php on line 130
+[09-Dec-2018 17:54:15 UTC] PHP Notice:  Undefined variable: price in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 182
+[09-Dec-2018 17:54:15 UTC] PHP Notice:  Undefined variable: price in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 183
+[09-Dec-2018 17:54:15 UTC] PHP Notice:  Undefined variable: total in /home/tedxbank/public_html/projects/admin/users/invoice.php on line 183
+[14-Dec-2018 11:38:16 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/all_Transactions.php on line 275
+[14-Dec-2018 11:39:08 UTC] PHP Notice:  Undefined variable: client_id in /home/tedxbank/public_html/projects/admin/users/all_Transactions.php on line 169
+[14-Dec-2018 11:41:20 UTC] PHP Notice:  Undefined variable: client_id in /home/tedxbank/public_html/projects/admin/users/all_Transactions.php on line 175
+[14-Dec-2018 19:25:44 UTC] PHP Notice:  Undefined variable: client_id in /home/tedxbank/public_html/projects/admin/users/all_Transactions.php on line 171
+[15-Dec-2018 07:12:08 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/index.php on line 11
+[15-Dec-2018 07:12:16 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/index.php on line 11
+[15-Dec-2018 07:13:40 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/index.php on line 11
+[15-Dec-2018 07:16:42 UTC] PHP Notice:  Undefined variable: client_id in /home/tedxbank/public_html/projects/admin/users/all_Transactions.php on line 171
+[15-Dec-2018 07:55:38 UTC] PHP Notice:  Undefined index: no_of_tran in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 85
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 81
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  Undefined index: no_of_tran in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 85
+[15-Dec-2018 07:56:43 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 207
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 81
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  Undefined index: no_of_tran in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 85
+[15-Dec-2018 08:00:29 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 207
+[15-Dec-2018 11:26:12 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 81
+[15-Dec-2018 11:26:12 UTC] PHP Notice:  Undefined index: no_of_tran in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 85
+[15-Dec-2018 11:26:12 UTC] PHP Notice:  Undefined index: id in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 207
+[15-Dec-2018 11:33:18 UTC] PHP Notice:  Undefined index: no_of_tran in /home/tedxbank/public_html/projects/admin/users/multiple_tran.php on line 85
