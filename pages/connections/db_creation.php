@@ -20,10 +20,10 @@
     // `jayesh` DATE NOT NULL
     $msg="";
     $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      
-    $a = "CREATE TABLE `biharwq6_ewm`.`$part1` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `Product_Name` VARCHAR(255) NOT NULL , `Service_cost` VARCHAR(255) NOT NULL , `No_of_products` VARCHAR(255) NOT NULL , `Total_Cost` VARCHAR(255) NOT NULL , `Ddate` DATE NOT NULL , `date` VARCHAR(255) NOT NULL , `mounth` VARCHAR(255) NOT NULL , `year` VARCHAR(255) NOT NULL , `status` VARCHAR(255) NOT NULL , `shift` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;";
-    $b = "CREATE TABLE `biharwq6_ewm`.`$part2` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `Product_Name` VARCHAR(255) NOT NULL , `Service_cost` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`), UNIQUE (`Product_Name`)) ENGINE = MyISAM;";
-    $c = "ALTER TABLE `biharwq6_ewm`.`$part1` ADD UNIQUE( `Product_Name`, `Ddate`);";
+    $db_name = "yourcoice";//yourcoice
+    $a = "CREATE TABLE `. $db_name .`.`$part1` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `Product_Name` VARCHAR(255) NOT NULL , `Service_cost` VARCHAR(255) NOT NULL , `No_of_products` VARCHAR(255) NOT NULL , `Total_Cost` VARCHAR(255) NOT NULL , `Ddate` DATE NOT NULL , `date` VARCHAR(255) NOT NULL , `mounth` VARCHAR(255) NOT NULL , `year` VARCHAR(255) NOT NULL , `status` VARCHAR(255) NOT NULL , `shift` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;";
+    $b = "CREATE TABLE `. $db_name .`.`$part2` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `Product_Name` VARCHAR(255) NOT NULL , `Service_cost` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`), UNIQUE (`Product_Name`)) ENGINE = MyISAM;";
+    $c = "ALTER TABLE `. $db_name .`.`$part1` ADD UNIQUE( `Product_Name`, `Ddate`);";
         $commands = [$a,$b,$c];
         $count = 0;
         foreach ($commands as $command) 
