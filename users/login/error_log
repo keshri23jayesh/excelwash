@@ -359,3 +359,37 @@
 [02-Jan-2019 13:25:30 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 34
 [02-Jan-2019 13:25:30 UTC] PHP Notice:  Undefined variable: username_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 107
 [02-Jan-2019 13:25:30 UTC] PHP Notice:  Undefined variable: password_err in /home/tedxbank/public_html/projects/admin/users/login/index.php on line 112
+[08-Jan-2019 12:59:21 Etc/GMT] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'tedxbank_amansir'@'localhost' (using password: YES)' in /home/biharwq6/public_html/manage/login/config.php:10
+Stack trace:
+#0 /home/biharwq6/public_html/manage/login/config.php(10): PDO->__construct('mysql:host=loca...', 'tedxbank_amansi...', 'amansir@123')
+#1 /home/biharwq6/public_html/manage/users/login/index.php(3): include('/home/biharwq6/...')
+#2 {main}
+  thrown in /home/biharwq6/public_html/manage/login/config.php on line 10
+[10-Jan-2019 20:13:26 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[10-Jan-2019 20:13:26 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[10-Jan-2019 20:13:26 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[18-Jan-2019 23:34:21 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[18-Jan-2019 23:34:21 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[18-Jan-2019 23:34:21 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[22-Jan-2019 03:18:00 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[22-Jan-2019 03:18:00 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[22-Jan-2019 03:18:00 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[22-Jan-2019 14:49:39 Etc/GMT] PHP Notice:  Undefined index: pagename in /home/biharwq6/public_html/manage/users/login/index.php on line 7
+[22-Jan-2019 14:49:39 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[22-Jan-2019 14:49:39 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[22-Jan-2019 14:49:39 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[22-Jan-2019 22:18:14 Etc/GMT] PHP Notice:  Undefined index: pagename in /home/biharwq6/public_html/manage/users/login/index.php on line 7
+[22-Jan-2019 22:18:14 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[22-Jan-2019 22:18:14 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[22-Jan-2019 22:18:14 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[22-Jan-2019 22:18:16 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[22-Jan-2019 22:18:16 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[22-Jan-2019 22:18:16 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[24-Jan-2019 07:06:51 Etc/GMT] PHP Notice:  Undefined index: pagename in /home/biharwq6/public_html/manage/users/login/index.php on line 7
+[24-Jan-2019 07:06:51 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[24-Jan-2019 07:06:51 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[24-Jan-2019 07:06:51 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112
+[04-Feb-2019 19:55:48 Etc/GMT] PHP Notice:  Undefined index: pagename in /home/biharwq6/public_html/manage/users/login/index.php on line 7
+[04-Feb-2019 19:55:48 Etc/GMT] PHP Notice:  Undefined variable: email in /home/biharwq6/public_html/manage/users/login/index.php on line 106
+[04-Feb-2019 19:55:48 Etc/GMT] PHP Notice:  Undefined variable: username_err in /home/biharwq6/public_html/manage/users/login/index.php on line 107
+[04-Feb-2019 19:55:48 Etc/GMT] PHP Notice:  Undefined variable: password_err in /home/biharwq6/public_html/manage/users/login/index.php on line 112

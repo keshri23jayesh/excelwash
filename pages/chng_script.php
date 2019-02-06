@@ -16,36 +16,38 @@
                         
                         foreach($row_as_product as $row):
                         {
-                            $var="";
-                            $mounth="";
-                            $date="";
-                            $year="";
-                            $newdate="";
-                            $id="";
+                            // $var="";
+                            // $mounth="";
+                            // $date="";
+                            // $year="";
+                            // $newdate="";
+                            // $id="";
                             
-                            $var = $row['Ddate'];
-                            //echo $var." old"."<br>";
-                            $id = $row['id'];
-                            list($year,$mounth,$date) = explode('-',$var);
-                            $newdate="";
-                            $newdate = $row['year']."-".$row['mounth']."-".$row['date'];
+                            // $var = $row['Ddate'];
+                            // //echo $var." old"."<br>";
+                             $id = $row['id'];
+                            // list($year,$mounth,$date) = explode('-',$var);
+                            // $newdate="";
+                            // $newdate = $row['year']."-".$row['mounth']."-".$row['date'];
                             
-                            $newdate = (string)$newdate;
+                            // $newdate = (string)$newdate;
                             
-                            $newdate = str_replace(' ', '', $newdate);
+                            // $newdate = str_replace(' ', '', $newdate);
                             //echo $newdate;
                             //echo " new ".$mounth."-".$year."-".$date."<br>";
                             $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                            $sql = "UPDATE $table_name SET Ddate = '$newdate' WHERE id = '$id'";
+                            //$sql = "UPDATE $table_name SET Ddate = '$newdate' WHERE id = '$id'";
+                            $shift = "Morning";
+                            $sql = "UPDATE $table_name SET shift = '$shift' WHERE id = '$id'";
                             $link->exec($sql);
                             
-                            $id="";
-                            $sql="";
-                            $var="";
-                            $mounth="";
-                            $date="";
-                            $year="";
-                            $newdate="";
+                            // $id="";
+                            // $sql="";
+                            // $var="";
+                            // $mounth="";
+                            // $date="";
+                            // $year="";
+                            // $newdate="";
                         }
                         endforeach;
                         echo "<br>";

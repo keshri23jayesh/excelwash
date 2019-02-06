@@ -74,11 +74,19 @@ table, th, td {
             
             $table_name=$f4[5];
             $table_name2=$f4[6];
+            //$shift=$_POST[''];
             
-            $query1 = "SELECT * FROM $table_name WHERE mounth = '$mounth'";
-            $varible1 = $link->prepare($query1);
-            $varible1->execute();
-            $result = $varible1->fetchall();
+            try
+            {
+                $query1 = "SELECT * FROM $table_name WHERE mounth = '$mounth'";
+                $varible1 = $link->prepare($query1);
+                $varible1->execute();
+                $result = $varible1->fetchall();
+            }
+            catch(PDOException $e)
+            {
+              $msg =  $e->getMessage();
+            }
         ?>
         
         
@@ -119,11 +127,24 @@ table, th, td {
                   <tr>
                     <th>Products</th>  
                     <?php
+                    if($shift != "Both")
                     $que = "SELECT DISTINCT Ddate FROM $table_name WHERE mounth = '$mounth' AND shift='$shift' ORDER BY Ddate ";
-                    $vari = $link->prepare($que);
-                    $vari->execute();
-                    $dates = $vari->fetchall();
-                    $dates = array_reverse($dates, true);
+                    else
+                    $que = "SELECT DISTINCT Ddate FROM $table_name WHERE mounth = '$mounth' ORDER BY Ddate ";
+                    
+                    
+                    try
+                    {
+                        $vari = $link->prepare($que);
+                        $vari->execute();
+                        $dates = $vari->fetchall();
+                    }
+                    catch(PDOException $e)
+                    {
+                        $msg =  $e->getMessage();
+                    }
+                    
+                    //$dates = array_reverse($dates, true);
                     //print_r($dates);
                     $total_products = array();
                     foreach($dates as $row): 
@@ -143,11 +164,19 @@ table, th, td {
                 <?php
                     
                     //fetching the name of the product
-                    
+                    try
+                    {
                     $ProductName = "SELECT Product_Name FROM $table_name2";
                     $Pro = $link->prepare($ProductName);
                     $Pro->execute();
                     $ProD = $Pro->fetchall();
+                    }
+                    catch(PDOException $e)
+                    {
+                      $msg =  $e->getMessage();
+                    }
+                    
+                    
                     //end fetching the name of the product
                     
                     foreach($ProD as $row)
@@ -156,10 +185,16 @@ table, th, td {
                         //fetching the quantity of according to date
                             $jay = $row['Product_Name'];
                             $row_as_prod = "SELECT Product_Name, Service_cost, No_of_products, Total_Cost, Ddate FROM $table_name WHERE mounth = '$mounth' AND Product_Name = '$jay' AND shift='$shift' ORDER BY mounth";
+                            try
+                            {
                             $row_as_produ = $link->prepare($row_as_prod);
                             $row_as_produ->execute();
                             $row_as_product = $row_as_produ->fetchall();
-                     
+                            }
+                            catch(PDOException $e)
+                            {
+                              $msg =  $e->getMessage();
+                            }
                          if($row_as_product) 
                          {
                             echo "<tr>";
@@ -203,17 +238,17 @@ table, th, td {
                          }  
                     }
                     echo "<tr>";
-                    echo "<td>TOTAL</td>";
+                    echo "<td><b>TOTAL<b></td>";
                     $x = 0;
                     foreach($dates as $dateasrow)
                             {
-                                echo "<td>".$total_products[$dateasrow['Ddate']]."</td>";
+                                echo "<td><b>".$total_products[$dateasrow['Ddate']]."</b></td>";
                                 $x += $total_products[$dateasrow['Ddate']];
                             }
                    
-                    echo "<td>".$x."</td>";
+                    echo "<td><b>".$x."</b></td>";
                     echo "<td></td>";
-                    echo "<td>".$sumtotal."</td>";
+                    echo "<td><b>".$sumtotal."</b></td>";
                     echo "<tr>";
                 ?>
                 
@@ -225,14 +260,18 @@ table, th, td {
           <!-- this row will not appear when printing -->
           <div class="row no-print">
             <div class="col-xs-12">
-              <button class="btn btn-primary pull-right" style="margin-right: 5px;"><i class="fa fa-print"></i> Print</button>
+              <button onclick="myFunction()" class="btn btn-primary pull-right" style="margin-right: 5px;"><i class="fa fa-print"></i> Print</button>
             </div>
           </div>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-
-</div>
 <?php include('footer.php');?>		
+</div>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
 
 <!-- jQuery 2.1.3 -->
     <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>

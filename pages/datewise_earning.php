@@ -41,38 +41,27 @@
 		})
 	</script>
 
-<style>
-table, th, td {
-    border: 1px solid black !important;
-}
-</style>
-
 
 </head>
 
 <body class="skin-blue">
 
+
+
 <div class="wrapper">
 
 		<?php include('mainheader1.php');?>
         <?php include('mainsidebar1.php');?>
-		
-		<div class="content-wrapper">
-        
-        
-        <?php
+
+<?php
             
             $Vendor=$_POST['Vendor'];
-            
             $startdate =$_POST['startdate'];
             $enddate =$_POST['enddate'];
-            
             $startmounth=$_POST['startmounth'];
             $endmounth=$_POST['endmounth'];
-            
             $startyear=$_POST['startyear'];
             $endyear=$_POST['endyear'];
-            
             if($startyear > $endyear)
             {
                 $swap='';
@@ -106,7 +95,7 @@ table, th, td {
             $date2 = str_replace(" ","",$date2);
             
             //echo $date1;
-            echo "<br>";
+            //echo "<br>";
             //echo $date2;
             
             $time = strtotime($date1);
@@ -115,87 +104,93 @@ table, th, td {
             
             $time = strtotime($date2);
             $date2 = date('Y-m-d',$time);
-            //echo $date2;
+
+
+?>
+
+		
+		<div class="content-wrapper">
+        
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Vender List</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Cost</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+            <?php
             
-            
-            if($Vendor == "All")
-            {
-            
-                  
                       $vids = $link->prepare("SELECT * FROM vendors");
                       $vids->execute();
                       $result = $vids->fetchAll();
                       $var = 0;
-                   
-                          foreach($result as $row)
-                          {
+                      
+                          foreach($result as $row):
                             $table_name = $row['transtion_table'];
                             $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate BETWEEN '$date1' AND '$date2'";
-                            //$row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate >= '$date1' AND Ddate <= '$date2'";
+                            try
+                            {
                             $row_as_produ = $link->prepare($row_as_prod);
                             $row_as_produ->execute();
                             $row_as_product = $row_as_produ->fetchall();
-                            //echo $row_as_product["SUM(Total_Cost)"];
-                            //print_r($row_as_product);
-                            foreach($row_as_product as $jayes):
-                            {
-                                $var += $jayes['SUM(Total_Cost)'];
                             }
-                            endforeach;
-                          }
-                      //echo $var;
-                      //echo "ifflag";
-             
-            }
-            else
-            {
-            
-                      $vids = $link->prepare("SELECT * FROM vendors WHERE Email = '$Vendor'");
-                      $vids->execute();
-                      $result = $vids->fetchAll();
+                            catch(PDOException $e)
+                            {
+                              $msg =  $e->getMessage();
+                            }
+                            $var += $row_as_product['SUM(Total_Cost)'];
+                            
+                            //echo $var;
+                         
+                         foreach($row_as_product as $jayes)
+                                $var += $jayes['SUM(Total_Cost)'];
+                            
+                         
+                         ?>
+                         
+                        <tr>
+                            
+                                <td><? echo $row['id']; ?></td>
+                                <td><? echo $row['Name']; ?></td>
+                                <td><? echo $row['Email']; ?></td>
+                                <td><? echo $var; ?></td>
+                                
+                        </tr>
+                      <?php 
                       $var = 0;
-                   
-                          foreach($result as $row)
-                          {
-                            $table_name = $row['transtion_table'];
-                            $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate BETWEEN '$date1' AND '$date2'";
-                            //$row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate >= '$date1' AND Ddate <= '$date2'";
-                            $row_as_produ = $link->prepare($row_as_prod);
-                            $row_as_produ->execute();
-                            $row_as_product = $row_as_produ->fetchall();
-                            //echo $row_as_product["SUM(Total_Cost)"];
-                            //print_r($row_as_product);
-                            foreach($row_as_product as $jayes):
-                            {
-                                $var += $jayes['SUM(Total_Cost)'];
-                            }
-                            endforeach;
-                          }
-                      //echo $var;
-                      //echo "elseflag";
-            
-            }
-            
-            
-        ?>
+                      endforeach
+                      ?>
+					</tbody>
+				  </table>
+				  <br>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+</section>
         
+                            
+                            
+                            
+                            
+    
         
         <section class="content">
-            <div class='row'>
-              <div class='col-sm-12'>
-                <div class='box box-primary'>
-                  <div class='box-header with-border'>
-                    <h3 class='box-title'>Ready</h3>
-                   
-                  </div><!-- /.box-header -->
-                  <div class='box-body'>
-                    <h3>Transaction Between <?php echo "<b>". $date1 ."</b> and <b>" . $date2 . "</b> is <b> ₹ ". $var ."</b>" ?></h3>
-                    
-                  </div><!-- /.box-body -->
-                </div><!-- /.box -->
-              </div><!-- /.col -->
-             </div>
-        </section>
+
+        
+        
+        
         
       </div><!-- /.content-wrapper -->
 

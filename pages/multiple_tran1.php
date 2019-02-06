@@ -88,8 +88,15 @@ table
         <?php include('mainsidebar1.php');?>
 		<?php 
             $id = $_GET['id'];
+            try
+            {
             $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
             $f4 = $sql->fetch();
+            }
+            catch(PDOException $e)
+                        {
+                          $msg =  $e->getMessage();
+                        }
             //echo $f4[6];
             // $no_of_tran = $_POST['no_of_tran'];
         ?>
@@ -100,49 +107,17 @@ table
         	<div class="col-md-12">
         	    <div class="box box-primary">
                         <div class="box-header">
-                          <h3 class="box-title">Quick Example</h3>
+                          <h3 class="box-title">Multiple Transaction</h3>
                         </div><!-- /.box-header -->
                         <!-- form start -->
                         <form action="connections_pro/multiple1.php" method="post" class ="form-group" >
                           <div class="box-body">
                             
-                                               <div class="row"> 
-                                                    <?php 
-                                                        for($k=1; $k<=20; $k++) 
-                                                        {
-                                                            
-                                                    ?>
-                                                        <div class="notshow">
-                                                           <?php echo "<h3>&nbsp; &nbsp; Form no ".$k."</h3>"; ?>
-                                                        <div class="col-md-4">
-                                                        <div class="form-group">
-                                                          <label>Product Name & Cost</label>
-                                                          <?php
-                                                                  $table_name = trim($f4[6]);
-                                                                  $table_name = (string)$table_name;
-                                                                  $query1 = "SELECT * FROM $table_name";
-                                                                  $varible1 = $link->prepare($query1);
-                                                                  $varible1->execute();
-                                                                  $result = $varible1->fetchAll();
-                                                          ?>
-                                                          
-                                                          <select class="form-control" name="Item<?php echo $k; ?>">
-                                                          <?php foreach($result as $row): ?>
-                                                            <option value="<? echo $row['Product_Name']."**".$row['Service_cost']; ?>"><? echo $row['Product_Name']."<b>-</b>".$row['Service_cost']; ?></option>
-                                                          <?php endforeach ?>
-                                                          </select>
-                                                        </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                        <div class="form-group">
-                                                        <span><b>Number</b></span>
-                                                        <input type="number" name="Number<?php echo $k; ?>" class="form-control" placeholder="No of Items">
-                                                        </div>
-                                                        </div>
-                                                        <div class="col-md-4">
+                            <div class="row">
+                                                        <div class="col-md-3">
                                                         <div class="form-group">
                                                           <label>Select Mounth</label>
-                                                          <select class="form-control" name="mounth<?php echo $k; ?>">
+                                                          <select class="form-control" name="mounth" required>
                                                             <option value="01">January</option>
                                                             <option value="02">February</option>
                                                             <option value="03">March</option>
@@ -158,10 +133,10 @@ table
                                                           </select>
                                                         </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-2">
                                                         <div class="form-group">
                                                           <label>Select Date</label>
-                                                          <select class="form-control" name="startdate<?php echo $k; ?>">
+                                                          <select class="form-control" name="startdate" required>
                                                           <option value="01">01</option>
                                                           <option value="02">02</option>
                                                           <option value="03">03</option>
@@ -182,36 +157,92 @@ table
                                                           </select>
                                                         </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-2">
                                                         <div class="form-group">
                                                           <label>Select Year</label>
-                                                          <select class="form-control" name="year<?php echo $k; ?>">
-                                                            <option value="2018">2018</option>
+                                                          <select class="form-control" name="year" required>
+                                                            
                                                             <option value="2019">2019</option>
                                                             <option value="2020">2020</option>
                                                             <option value="2021">2021</option>
                                                           </select>
                                                         </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-2">
                                                         <div class="form-group">
                                                         <label>Status</label>
-                                                        <select class="form-control" name="status<?php echo $k; ?>">
+                                                        <select class="form-control" name="status" required>
                                                             <option value="Pending">Pending</option>
                                                             <option value="Washed">Washed</option>
                                                             <option value="Delivered">Delivered</option>
                                                         </select>
                                                     </div>
-                                                        </div>
-                                                    <div class="col-md-3">
+                                                    </div>
+                                                        <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Shift</label>
-                                                        <select class="form-control" name="shift<?php echo $k; ?>">
+                                                        <select class="form-control" name="shift" required>
                                                             <option value="Morning">Morning</option>
                                                             <option value="Evening">Evening</option>
                                                         </select>
                                                     </div>
                                                     </div>
+                            </div>
+                                                        
+                                                        
+                            
+                            
+                                               <div class="row"> 
+                                               
+                                               
+                                               
+                                                    <?php 
+                                                        for($k=1; $k<=20; $k++) 
+                                                        {
+                                                            
+                                                    ?>
+                                                    
+                                                        <div class="notshow">
+                                                        
+                                                          <div class="col-md-1"><?php echo $k; ?></div>
+                                                        <div class="col-md-5">
+                                                        <div class="form-group">
+                                                          
+                                                          <?php
+                                                                  $table_name = trim($f4[6]);
+                                                                  $table_name = (string)$table_name;
+                                                                  try
+                                                                  {
+                                                                  $query1 = "SELECT * FROM $table_name";
+                                                                  $varible1 = $link->prepare($query1);
+                                                                  $varible1->execute();
+                                                                  $result = $varible1->fetchAll();
+                                                                  }
+                                                                  catch(PDOException $e)
+                                                                    {
+                                                                      $msg =  $e->getMessage();
+                                                                    }
+                                                          ?>
+                                                          
+                                                          <select class="form-control" name="Item<?php echo $k; ?>" required>
+                                                          <?php foreach($result as $row): ?>
+                                                          <option vlaue="">Select Product</option>
+                                                            <option value="<?php echo $row['Product_Name']."**".$row['Service_cost']; ?>"><? echo $row['Product_Name']."<b>-</b>".$row['Service_cost']; ?></option>
+                                                          <?php endforeach ?>
+                                                          </select>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                        <div class="form-group">
+                                                        
+                                                        <input type="number" name="Number<?php echo $k; ?>" class="form-control" placeholder="No of Items">
+                                                        </div>
+                                                        </div>
+                                                        
+                                                        
+                                                      
+                                                        
+                                                    
                                                     </div>
                                                     
                                                     <?php 
@@ -230,9 +261,9 @@ table
                             <input type="hidden" name="idy" value="<?php echo $_GET['id']; ?>">
                             
                           <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="button" id="show_more" class="btn btn-primary">Show more</button>
-                            <button type="button" id="remove" class="btn btn-primary">Remove</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="button" id="show_more" class="btn btn-primary">Add more</button>
+                            <button type="button" id="remove" class="btn btn-danger">Remove</button>
                           </div>
                         </form>
                       </div><!-- /.box -->

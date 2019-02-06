@@ -10,10 +10,12 @@
     $table_name=$_POST['table_name'];
     $status=$_POST['status'];
     $idy=$_POST['idy'];
-    
+    $Number=$_POST['Number'];
+    $Service_cost=$_POST['Service_cost'];
+    $Total_Cost = $Number * $Service_cost;
     $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
          
-    $sql = "UPDATE $table_name SET status = '$status' WHERE id = '$id'";
+    $sql = "UPDATE $table_name SET status = '$status',  No_of_products = '$Number', Total_Cost = '$Total_Cost' WHERE id = '$id'";
     
      if($link->exec($sql))
           $count++;

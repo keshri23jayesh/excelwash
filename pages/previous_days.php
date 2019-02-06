@@ -104,8 +104,15 @@ table
             }
             //echo " ".$dates;
             $id = $_GET['id'];
-            $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
-            $f4 = $sql->fetch();
+            try
+            {
+                $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
+                $f4 = $sql->fetch();
+            }
+            catch(PDOException $e)
+            {
+                 $msg =  $e->getMessage();
+            }
         ?>
 		
 		<section class="content">
@@ -180,10 +187,17 @@ table
                       $table_name1 = trim($f4[5]);
                       $table_name1 = (string)$table_name1;
                       //$dates = (string)date("d-m-Y");
+                      try
+                      {
                       $query1 = "SELECT * FROM $table_name1 WHERE Ddate ='$dates'";
                       $varible1 = $link->prepare($query1);
                       $varible1->execute();
                       $result = $varible1->fetchAll();
+                      }
+                      catch(PDOException $e)
+                        {
+                          $msg =  $e->getMessage();
+                        }
                       //echo $result;
                       
                       //echo "jayesh";

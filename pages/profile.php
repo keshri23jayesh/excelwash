@@ -80,9 +80,16 @@ table
 		<?php 
             
             $id = $_GET['id'];
+            try
+            {
             $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
             $f4 = $sql->fetch();
             $client_id = $id;
+            }
+        catch(PDOException $e)
+        {
+            $msg =  $e->getMessage();
+        }
         ?>
 		
 		<div class="content-wrapper">
@@ -108,21 +115,18 @@ table
                   <a href = "#bal" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Add New Product</a>
                   </div><!-- /.box -->
                 </div>
-                <div class="col-md-3">
-                <div class="box-body pad table-responsive">
-                  <a href = "#tran" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">New Transaction</a>
-                  </div><!-- /.box -->
-                </div>
-                <div class="col-md-3">
-                <div class="box-body pad table-responsive">
-                  <a href = "#addoldtran" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Add Old Transaction</a>
-                  </div><!-- /.box -->
-                </div>
-                <div class="col-md-3">
-                <div class="box-body pad table-responsive">
-                  <a href = "#addmul" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Add Multiple Transaction</a>
-                  </div><!-- /.box -->
-                </div>
+                
+                <!--<div class="col-md-3">-->
+                <!--<div class="box-body pad table-responsive">-->
+                <!--  <a href = "#tran" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">New Transaction</a>-->
+                <!--  </div><!-- /.box -->
+                <!--</div>-->
+                <!--<div class="col-md-3">-->
+                <!--<div class="box-body pad table-responsive">-->
+                <!--  <a href = "#addoldtran" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Add Old Transaction</a>-->
+                <!--  </div><!-- /.box -->
+                <!--</div>-->
+                
                 <div class="col-md-3">
                 <div class="box-body pad table-responsive">
                   <a href ="multiple_tran1.php?id=<?php echo $client_id; ?>" class="btn btn-block btn-info btn-lg text-center">Add Multiple Transaction</a>
@@ -154,7 +158,7 @@ table
                   <div class="box-body">
                     <div class="form-group">
                       <label for="exampleInputname1">Name</label>
-                      <input type="email" class="form-control" id="exampleInputname1" value="<?php echo $f4[1]; ?>">
+                      <input type="email" class="form-control" id="exampleInputname1" value="<?php echo $f4[1]; ?>" readonly>
                     </div>
                     
                     <div class="form-group">
@@ -164,22 +168,22 @@ table
                     
                     <div class="form-group">
                       <label for="exampleInputphone1">Phone</label>
-                      <input type="number" class="form-control" id="exampleInputphone1" value="<?php echo $f4[3]; ?>">
+                      <input type="number" class="form-control" id="exampleInputphone1" value="<?php echo $f4[3]; ?>" readonly>
                     </div>
                     
                     <div class="form-group">
                       <label for="exampleInputpass1">Password</label>
-                      <input type="text" class="form-control" id="exampleInputpass1" value="<?php echo $f4[7]; ?>">
+                      <input type="text" class="form-control" id="exampleInputpass1" value="<?php echo $f4[7]; ?>" readonly>
                     </div>
                     
                     <div class="form-group">
                       <label for="exampleInputBusiness_Name1">Business Name</label>
-                      <input type="text" class="form-control" id="exampleInputBusiness_Name1" value="<?php echo $f4[8]; ?>">
+                      <input type="text" class="form-control" id="exampleInputBusiness_Name1" value="<?php echo $f4[8]; ?>" readonly>
                     </div>
                     
                     <div class="form-group">
                       <label for="exampleInputAddress1">Address</label>
-                      <input type="text" class="form-control" id="exampleInputAddress1" value="<?php echo $f4[9]; ?>">
+                      <input type="text" class="form-control" id="exampleInputAddress1" value="<?php echo $f4[9]; ?>" readonly>
                     </div>
                   
                   </div><!-- /.box-body -->
@@ -227,10 +231,17 @@ table
                     <?php
                       $table_name = trim($f4[6]);
                       $table_name = (string)$table_name;
+                      try
+                      {
                       $query1 = "SELECT * FROM $table_name";
                       $varible1 = $link->prepare($query1);
                       $varible1->execute();
                       $result = $varible1->fetchAll();
+                      }
+                      catch(PDOException $e)
+                        {
+                          $msg =  $e->getMessage();
+                        }
                       //echo $result;
                       
                       //echo "jayesh";
@@ -296,11 +307,18 @@ table
                       
                       $table_name = trim($f4[5]);
                       $table_name = (string)$table_name;
-                      $dates = (string)date("d-m-Y");
+                      $dates = (string)date("Y-m-d");
+                      try
+                      {
                       $query1 = "SELECT * FROM $table_name WHERE Ddate ='$dates'";
                       $varible1 = $link->prepare($query1);
                       $varible1->execute();
                       $result = $varible1->fetchAll();
+                      }
+                      catch(PDOException $e)
+                        {
+                          $msg =  $e->getMessage();
+                        }
                       //echo $result;
                       
                       //echo "jayesh";
@@ -395,7 +413,7 @@ table
                                         </div>
                                         <div class="col-lg-6">
                                                 <span><b>Service_cost</b></span>
-                                                <input type="number" name="Service_cost" class="form-control" placeholder="Service_cost">
+                                                <input type="number" name="Service_cost" step="0.01" class="form-control" placeholder="Service_cost">
                                         </div>
                                         <input type="hidden" name="table_name" value="<?php echo $f4[6]; ?>">
                                         <input type="hidden" name="idy" value="<?php echo $_GET['id']; ?>">
@@ -432,10 +450,17 @@ table
                                                   <?php
                                                           $table_name = trim($f4[6]);
                                                           $table_name = (string)$table_name;
+                                                          try
+                                                          {
                                                           $query1 = "SELECT * FROM $table_name";
                                                           $varible1 = $link->prepare($query1);
                                                           $varible1->execute();
                                                           $result = $varible1->fetchAll();
+                                                          }
+                                                          catch(PDOException $e)
+                                                          {
+                                                            $msg =  $e->getMessage();
+                                                          }
                                                   ?>
                                                   
                                                   <select class="form-control" name="Item">
@@ -596,10 +621,17 @@ table
                                                   <?php
                                                           $table_name = trim($f4[6]);
                                                           $table_name = (string)$table_name;
+                                                          try
+                                                          {
                                                           $query1 = "SELECT * FROM $table_name";
                                                           $varible1 = $link->prepare($query1);
                                                           $varible1->execute();
                                                           $result = $varible1->fetchAll();
+                                                          }
+                                                          catch(PDOException $e)
+                                                            {
+                                                              $msg =  $e->getMessage();
+                                                            }
                                                   ?>
                                                   
                                                   <select class="form-control" name="Item">
@@ -718,8 +750,9 @@ table
 
 </div>
 <!-- /#wrapper -->
-</div>
 <?php include('footer.php');?>
+</div>
+
 
 <!-- jQuery 2.1.3 -->
     <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>

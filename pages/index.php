@@ -113,22 +113,34 @@
                       $vids->execute();
                       $result = $vids->fetchAll();
                       $var = 0;
+                      $total = 0;
                       foreach($result as $row)
-                      {
-                        $table_name = $row['transtion_table'];
-                        $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name";
-                        $row_as_produ = $link->prepare($row_as_prod);
-                        $row_as_produ->execute();
-                        $row_as_product = $row_as_produ->fetchall();
-                        //echo $row_as_product["SUM(Total_Cost)"];
-                        
-                        foreach($row_as_product as $row):
-                        {
-                            $var += $row['SUM(Total_Cost)'];
-                        }
-                        endforeach;
-                      }
-                      echo $var;
+                          {
+                              $var = 0;
+                              try
+                                {
+                                    $table_name = $row['transtion_table'];
+                                    $row_as_prod = "SELECT Total_Cost FROM $table_name";      
+                                    $row_as_produ = $link->prepare($row_as_prod);
+                                    $row_as_produ->execute();
+                                    $row_as_product = $row_as_produ->fetchall();
+                                    //echo $row_as_product["SUM(Total_Cost)"];
+                                }
+                                catch(PDOException $e)
+                                {
+                                $msg =  $e->getMessage();
+                                }
+                                //echo $msg;
+                                
+                                foreach($row_as_product as $row):
+                                {
+                                    $var += $row['Total_Cost'];
+                                }
+                                endforeach;
+                                //echo $var . "<br>";
+                                $total += $var;
+                          }
+                      echo $total;
                  ?>
                   </h3>
                   <p>Total Transaction</p>
@@ -152,14 +164,20 @@
                       $var = 0;
                       foreach($result as $row)
                       {
-                        $table_name = $row['transtion_table'];
-                        $day = date("Y-m-d");
-                        $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate = '$day'";
-                        $row_as_produ = $link->prepare($row_as_prod);
-                        $row_as_produ->execute();
-                        $row_as_product = $row_as_produ->fetchall();
-                        //echo $row_as_product["SUM(Total_Cost)"];
-                        
+                        try
+                        {
+                            $table_name = $row['transtion_table'];
+                            $day = date("Y-m-d");
+                            $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate = '$day'";
+                            $row_as_produ = $link->prepare($row_as_prod);
+                            $row_as_produ->execute();
+                            $row_as_product = $row_as_produ->fetchall();
+                            //echo $row_as_product["SUM(Total_Cost)"];
+                        }
+                        catch(PDOException $e)
+                        {
+                            $msg =  $e->getMessage();
+                        }
                         foreach($row_as_product as $newrow):
                         {
                             $var += $newrow['SUM(Total_Cost)'];
@@ -218,15 +236,20 @@
                             $len = strlen($i);
                             if($len == 1)
                             $i = "0".$i;   
-                            
-                            $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE mounth = '$i' AND year = '$year'";
-                            $row_as_produ = $link->prepare($row_as_prod);
-                            $row_as_produ->execute();
-                            $row_as_product = $row_as_produ->fetchall();
-                            //echo $row_as_product["SUM(Total_Cost)"];
-                            //echo $row_as_product;
-                            //print_r($row_as_product);
-                            
+                            try
+                            {
+                                $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE mounth = '$i' AND year = '$year'";
+                                $row_as_produ = $link->prepare($row_as_prod);
+                                $row_as_produ->execute();
+                                $row_as_product = $row_as_produ->fetchall();
+                                //echo $row_as_product["SUM(Total_Cost)"];
+                                //echo $row_as_product;
+                                //print_r($row_as_product);
+                            }
+                            catch(PDOException $e)
+                                {
+                                $msg =  $e->getMessage();
+                                }
                             foreach($row_as_product as $jayes):
                             {
                                 $var += $jayes['SUM(Total_Cost)'];
@@ -236,7 +259,7 @@
                             endforeach;
                           }
                       echo "<td>".$var."</td>";
-                      //$var = 0;
+                      $var = 0;
                       //echo $var;
                       echo "</tr>";
                       }
@@ -354,7 +377,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Print Mounnthly Receipt</h4>
+                    <h4 class="modal-title">Print Mounthly Receipt</h4>
                   </div>
                   <div class="modal-body">
                     <div class="row">
@@ -366,12 +389,19 @@
                                                 <div class="form-group">
                                                   <label>Select Vendor</label>
                                                   <?php
+                                                          try
+                                                          {
                                                           $table_name = "vendors";
                                                           $table_name = (string)$table_name;
                                                           $query1 = "SELECT * FROM $table_name";
                                                           $varible1 = $link->prepare($query1);
                                                           $varible1->execute();
                                                           $result = $varible1->fetchAll();
+                                                          }
+                                                          catch(PDOException $e)
+                                                            {
+                                                            $msg =  $e->getMessage();
+                                                            }
                                                   ?>
                                                   
                                                   <select class="form-control" name="Vendor">
@@ -386,6 +416,7 @@
                                             <div class="form-group">
                                                 <label>Shift</label>
                                                 <select class="form-control" name="shift">
+                                                    <option value="Both">All</option>
                                                     <option value="Morning">Morning</option>
                                                     <option value="Evening">Evening</option>
                                                 </select>
@@ -458,12 +489,19 @@
                                                 <div class="form-group">
                                                   <label>Select Vendor</label>
                                                   <?php
+                                                         try
+                                                         {
                                                           $table_name = "vendors";
                                                           $table_name = (string)$table_name;
                                                           $query1 = "SELECT * FROM $table_name";
                                                           $varible1 = $link->prepare($query1);
                                                           $varible1->execute();
                                                           $result = $varible1->fetchAll();
+                                                          }
+                                                          catch(PDOException $e)
+                                                            {
+                                                            $msg =  $e->getMessage();
+                                                            }
                                                   ?>
                                                   
                                                   <select class="form-control" name="Vendor">
@@ -589,12 +627,19 @@
                                                 <div class="form-group">
                                                   <label>Select Vendor</label>
                                                   <?php
+                                                        try
+                                                         {
                                                           $table_name = "vendors";
                                                           $table_name = (string)$table_name;
                                                           $query1 = "SELECT * FROM $table_name";
                                                           $varible1 = $link->prepare($query1);
                                                           $varible1->execute();
                                                           $result = $varible1->fetchAll();
+                                                         }
+                                                         catch(PDOException $e)
+                                                            {
+                                                            $msg =  $e->getMessage();
+                                                            }
                                                   ?>
                                                   
                                                   <select class="form-control" name="Vendor">
@@ -743,9 +788,9 @@
 		
 		
 		
+<?php include('footer.php');?>
 		
 </div>
-<?php include('footer.php');?>
 
 <!-- jQuery 2.1.3 -->
     <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>

@@ -75,14 +75,19 @@ table, th, td {
             $enddate = max($startdate1,$enddate1);
             
             
-            
+            try
+            {
             $sql = $link->query("SELECT * FROM vendors WHERE Email ='$Vendor'");
             $f4 = $sql->fetch();
-            
+            }
+            catch(PDOException $e)
+            {
+              $msg =  $e->getMessage();
+            }
             $table_name=$f4[5];
             $table_name2=$f4[6];
             
-            echo " ".$mounth." ".$year." ".$Vendor." ".$startdate." ".$enddate." ".$table_name." ".$table_name2;
+            //echo " ".$mounth." ".$year." ".$Vendor." ".$startdate." ".$enddate." ".$table_name." ".$table_name2;
             
             // $query1 = "SELECT * FROM $table_name WHERE mounth = '$mounth'";
             // $varible1 = $link->prepare($query1);
@@ -130,10 +135,17 @@ table, th, td {
                     <?php
                     
                     $que = "SELECT DISTINCT Ddate FROM $table_name WHERE date >= '$startdate' AND date <= '$enddate' AND mounth = '$mounth' ORDER BY Ddate ";
+                    try
+                    {
                     $vari = $link->prepare($que);
                     $vari->execute();
                     $dates = $vari->fetchall();
-                    $dates = array_reverse($dates, true);
+                    }
+                    catch(PDOException $e)
+                    {
+                      $msg =  $e->getMessage();
+                    }
+                    //$dates = array_reverse($dates, true);
                     foreach($dates as $row): 
                     ?>
                      <th><?php echo $row['Ddate']; ?></th>
@@ -150,9 +162,16 @@ table, th, td {
                     
                     //fetching the name of the product
                     $ProductName = "SELECT Product_Name FROM $table_name2";
+                    try
+                    {
                     $Pro = $link->prepare($ProductName);
                     $Pro->execute();
                     $ProD = $Pro->fetchall();
+                    }
+                    catch(PDOException $e)
+                    {
+                      $msg =  $e->getMessage();
+                    }
                     //end fetching the name of the product
                     $sumtotal=0;
                     foreach($ProD as $row)
@@ -160,11 +179,17 @@ table, th, td {
                         //fetching the quantity of according to date
                         
                             $jay = $row['Product_Name'];
+                            try
+                            {
                             $row_as_prod = "SELECT Product_Name, Service_cost, No_of_products, Total_Cost, Ddate FROM $table_name WHERE date >= '$startdate' AND date <= '$enddate' AND mounth = '$mounth' AND Product_Name = '$jay' ORDER BY mounth";
                             $row_as_produ = $link->prepare($row_as_prod);
                             $row_as_produ->execute();
                             $row_as_product = $row_as_produ->fetchall();
-                            
+                            }
+                            catch(PDOException $e)
+                            {
+                              $msg =  $e->getMessage();
+                            }
                         if($row_as_product) 
                         {
                         echo "<tr>";

@@ -7,19 +7,27 @@
         $f4 = $sql->fetch();
         session_start();
         $_SESSION['username'] = $f4[1];
-        $a = "../multiple_tran.php?id=";
+        $a = "location: ../profile.php?id=";
         $a .= $idy; 
         echo $a;
         $table_name=$_POST['table_name'];
         $count = 0;
-        
-        echo $number."-".$idy."-".$table_name."-"."<br>";
-        
+        $mounth=$_POST['mounth'];
+        $year=$_POST['year'];
+        $date =$_POST['startdate'];
+        $shift = $_POST['shift'];
+        $status = $_POST['status'];
+        echo $number."<br>";
         $number++;
+        $i = 0;
         if($number > 0)
         {
+            //$count = $number;
             for($i=1;$i<=$number;$i++)
-            {             
+            {         
+                $No_of_products = (int) $_POST['Number'.$i];
+                if($No_of_products > 0)
+                {
                           try
                           {
                               $Item=$_POST['Item'.$i];
@@ -29,34 +37,57 @@
                               $No_of_products=$_POST['Number'.$i];
                               //$idy = $_POST['idy'];
                               
-                              $mounth=$_POST['mounth'.$i];
-                              $year=$_POST['year'.$i];
-                              $date =$_POST['startdate'.$i];
-                              
                               $Date = $year."-".$mounth."-".$date;
                               $Ddate =(string)$Date;
-                              $status = $_POST['status'.$i];
-                              $shift = $_POST['shift'.$i];
+                              
+                              
                               
                               list($year,$mounth,$date) = explode('-',$Date);
                               
                               $Total_Cost = $Service_cost * $No_of_products;
                               
                               $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                   
-                              $sql = "INSERT INTO $table_name(Product_Name, Service_cost, No_of_products, Total_Cost, Ddate, date, mounth, year, status) VALUES ('$Product_Name', '$Service_cost', '$No_of_products', '$Total_Cost', '$Date', '$date', '$mounth', '$year', '$status')";
-                            
-                              if($link->exec($sql))
-                                    $count++;
+                                
+                              //today
+                              
+                              $search_query = "";
+                              $search_query = $link->query("SELECT * FROM $table_name WHERE Product_Name ='$Product_Name' AND Ddate ='$Date'");
+                              $f4 = $search_query->fetch();
+                              if(!empty($f4))
+                              {
+                                  //$f4[2]    //service_cost
+                                  $No_of_products += $f4[3];    //no of products
+                                  $Total_Cost = $Service_cost * $No_of_products;    //total cost
+                                  //$sql = "UPDATE $table_name SET status = '$status' WHERE id = '$id'";
+                                  $sql = "UPDATE $table_name SET No_of_products = '$No_of_products' ,Total_Cost = '$Total_Cost' WHERE Product_Name ='$Product_Name' AND Ddate ='$Date'";
+                                  if($link->exec($sql))
+                                        $count++;
+                                  else
+                                        echo "jayesh<br>";
+                              
+                              }
                               else
-                                    echo "jayesh<br>";
+                              {
+                                  $sql = "INSERT INTO $table_name(Product_Name, Service_cost, No_of_products, Total_Cost, Ddate, date, mounth, year, status, shift) VALUES ('$Product_Name', '$Service_cost', '$No_of_products', '$Total_Cost', '$Date', '$date', '$mounth', '$year', '$status', '$shift')";
+                                  if($link->exec($sql))
+                                        $count++;
+                                  else
+                                        echo "jayesh<br>";
+                              }
+                              //today
                           }
                           catch(PDOException $e)
                           {
                                 $msg = $sql . "<br>" . $e->getMessage();
                           }
+                }
             }
         }
+        
+        $i--;
+        echo "<br>".$i." ".$number;
+        if(($i == $number) || ($number == 0))
+        {header($a);}
        
  
  ?>
