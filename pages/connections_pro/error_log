@@ -3,3 +3,68 @@
 [13-Dec-2018 13:11:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 590
 [13-Dec-2018 13:11:03 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 617
 [14-Dec-2018 11:05:51 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[15-Dec-2018 11:46:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 590
+[15-Dec-2018 11:46:37 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 617
+[22-Dec-2018 12:21:25 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[22-Dec-2018 12:22:39 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[27-Dec-2018 11:30:40 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[27-Dec-2018 11:30:58 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[02-Jan-2019 13:35:30 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[02-Jan-2019 13:42:14 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 03:12:11 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 04:47:14 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[05-Jan-2019 04:47:26 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 07:51:02 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[05-Jan-2019 07:51:14 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 08:26:54 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[05-Jan-2019 08:27:18 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[05-Jan-2019 08:27:32 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/add_hospital.php on line 62
+[05-Jan-2019 08:27:50 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 08:28:01 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 08:28:15 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction.php on line 77
+[05-Jan-2019 08:30:33 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction1.php on line 59
+[05-Jan-2019 08:30:33 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction1.php on line 86
+[05-Jan-2019 08:30:52 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction1.php on line 59
+[05-Jan-2019 08:30:52 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/Transaction1.php on line 86
+[07-Jan-2019 09:17:35 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 617
+[07-Jan-2019 09:18:43 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple.php on line 617
+[08-Jan-2019 07:54:16 UTC] PHP Notice:  Undefined index: number in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 3
+[08-Jan-2019 07:57:00 UTC] PHP Notice:  Undefined index: number in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 3
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: Item$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 23
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined offset: 1 in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 24
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: Number$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 27
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: mounth$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 30
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: year$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 31
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: startdate$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 32
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: status$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 36
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: Item$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 23
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined offset: 1 in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 24
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: Number$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 27
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: mounth$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 30
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: year$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 31
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: startdate$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 32
+[08-Jan-2019 09:05:53 UTC] PHP Notice:  Undefined index: status$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 36
+[08-Jan-2019 09:05:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0000-00-00' for key 'Product_Name'' in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php:46
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php(46): PDO->exec('INSERT INTO kes...')
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 46
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: Item$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 23
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined offset: 1 in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 24
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: Number$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 27
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: mounth$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 30
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: year$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 31
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: startdate$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 32
+[08-Jan-2019 09:07:52 UTC] PHP Notice:  Undefined index: status$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 36
+[08-Jan-2019 09:07:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0000-00-00' for key 'Product_Name'' in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php:46
+Stack trace:
+#0 /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php(46): PDO->exec('INSERT INTO kes...')
+#1 {main}
+  thrown in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 46
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: Item$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 23
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined offset: 1 in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 24
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: Number$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 27
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: mounth$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 30
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: year$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 31
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: startdate$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 32
+[08-Jan-2019 09:08:39 UTC] PHP Notice:  Undefined index: status$i in /home/tedxbank/public_html/projects/admin/pages/connections_pro/multiple1.php on line 36

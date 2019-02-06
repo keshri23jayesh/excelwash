@@ -1,9 +1,9 @@
 <?php
 /* Database config */
-$db_host		= '';
-$db_user		= ';
-$db_pass		= '';
-$db_database	= ''; 
+$db_host		= 'localhost';
+$db_user		= 'tedxbank_amansir';
+$db_pass		= 'amansir@123';
+$db_database	= 'tedxbank_amansir'; 
 
 /* End config */
 

@@ -21,12 +21,12 @@
       $Product_Name = $part1;
       $Service_cost = $pa;
       $No_of_products=$_POST['Number'];
-      $Date = date("d-m-Y");
-      
+      $Date = date("Y-m-d");
+      $shift = $_POST['shift'];
       
       $status = $_POST['status'];
       
-      list($date,$mounth,$year) = explode('-',$Date);
+      list($year,$mounth,$date) = explode('-',$Date);
       
       $table_name=$_POST['table_name'];
       
@@ -36,7 +36,7 @@
       
       $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
            
-      $sql = "INSERT INTO $table_name(Product_Name, Service_cost, No_of_products, Total_Cost, Ddate, date, mounth, year, status) VALUES ('$Product_Name', '$Service_cost', '$No_of_products', '$Total_Cost', '$Date', '$date', '$mounth', '$year', '$status')";
+      $sql = "INSERT INTO $table_name(Product_Name, Service_cost, No_of_products, Total_Cost, Ddate, date, mounth, year, status, shift) VALUES ('$Product_Name', '$Service_cost', '$No_of_products', '$Total_Cost', '$Date', '$date', '$mounth', '$year', '$status', '$shift')";
      
       if($link->exec($sql))
           $count++;

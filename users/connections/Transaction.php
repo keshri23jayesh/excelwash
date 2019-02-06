@@ -9,10 +9,10 @@
       $Product_Name = $part1;
       $Service_cost = $pa;
       $No_of_products=$_POST['Number'];
-      $Date = date("d-m-Y");
+      $Date = date("Y-m-d");
       $status = $_POST['status'];
       
-      list($date,$mounth,$year) = explode('-',$Date);
+      list($year,$mounth,$date) = explode('-',$Date);
       
       $table_name=$_POST['table_name'];
       

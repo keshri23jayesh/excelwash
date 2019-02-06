@@ -85,3 +85,11 @@ Stack trace:
 [14-Dec-2018 18:19:40 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
 [14-Dec-2018 18:42:38 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
 [14-Dec-2018 18:45:04 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[18-Dec-2018 17:36:03 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[18-Dec-2018 17:37:07 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[22-Dec-2018 12:20:05 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[27-Dec-2018 10:54:20 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[02-Jan-2019 13:07:29 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[02-Jan-2019 13:13:40 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[05-Jan-2019 05:55:52 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67
+[05-Jan-2019 07:50:43 UTC] PHP Notice:  Undefined variable: msg in /home/tedxbank/public_html/projects/admin/pages/connections/add_hospital.php on line 67

@@ -93,7 +93,7 @@ table
             $year=$_POST['year'];
             $startdate =$_POST['startdate'];
             $table_name=$_POST['table_name'];
-            $dates = $startdate."-".$mounth."-".$year;
+            $dates = $year."-".$mounth."-".$startdate;
             $dates = (string)$dates;
             
             //echo " ".$mounth."-- ".$year."-- ".$startdate."-- ".$table_name."-- ".$dates;
@@ -167,7 +167,9 @@ table
                         <th>No_of_products</th>
                         <th>Total_Cost</th>
                         <th>Date</th>
+                        <th>Shift</th>
                         <th>Wait</th>
+                       
                       </tr>
                     </thead>
                     <tbody>
@@ -195,6 +197,7 @@ table
                                 <td><? echo $row['No_of_products']; ?></td>
                                 <td><? echo $row['Total_Cost']; ?></td>
                                 <td><? echo $row['date']."-".$row['mounth']."-".$row['year']; ?></td>
+                                <td><? echo $row['shift']; ?></td>
                                 <td><? echo $row['status']; ?></td>
         						<td><a href="#edit_tra<? echo $row['id']; ?>" class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
         						    <a href="#delete_tra<? echo $row['id']; ?>" class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Delete</a>

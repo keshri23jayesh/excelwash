@@ -65,6 +65,8 @@ table, th, td {
             $mounth=$_POST['mounth'];
             $year=$_POST['year'];
             $Vendor=$_POST['Vendor'];
+            $shift=$_POST['shift'];
+            //echo $mounth."-".$year;
             
             $sql = $link->query("SELECT * FROM vendors WHERE Email ='$Vendor'");
             $f4 = $sql->fetch();
@@ -117,13 +119,17 @@ table, th, td {
                   <tr>
                     <th>Products</th>  
                     <?php
-                    $que = "SELECT DISTINCT Ddate FROM $table_name WHERE mounth = '$mounth' ORDER BY Ddate ";
+                    $que = "SELECT DISTINCT Ddate FROM $table_name WHERE mounth = '$mounth' AND shift='$shift' ORDER BY Ddate ";
                     $vari = $link->prepare($que);
                     $vari->execute();
                     $dates = $vari->fetchall();
                     $dates = array_reverse($dates, true);
+                    //print_r($dates);
+                    $total_products = array();
                     foreach($dates as $row): 
+                    $total_products[$row['Ddate']] = 0;
                     ?>
+                    
                      <th><?php echo $row['Ddate']; ?></th>
                     
                    <?php endforeach ?>
@@ -149,7 +155,7 @@ table, th, td {
                         
                         //fetching the quantity of according to date
                             $jay = $row['Product_Name'];
-                            $row_as_prod = "SELECT Product_Name, Service_cost, No_of_products, Total_Cost, Ddate FROM $table_name WHERE mounth = '$mounth' AND Product_Name = '$jay' ORDER BY mounth";
+                            $row_as_prod = "SELECT Product_Name, Service_cost, No_of_products, Total_Cost, Ddate FROM $table_name WHERE mounth = '$mounth' AND Product_Name = '$jay' AND shift='$shift' ORDER BY mounth";
                             $row_as_produ = $link->prepare($row_as_prod);
                             $row_as_produ->execute();
                             $row_as_product = $row_as_produ->fetchall();
@@ -169,6 +175,10 @@ table, th, td {
                                     {
                                         if($rowaa['Ddate'] == $dateasrow['Ddate'])
                                         {
+                                            $x = 0;
+                                            $x = $total_products[$dateasrow['Ddate']];
+                                            $x += $rowaa['No_of_products'];
+                                            $total_products[$dateasrow['Ddate']] = $x;
                                             echo $rowaa['No_of_products'];
                                             $total += $rowaa['No_of_products']*$rowaa['Service_cost'];
                                         }
@@ -194,12 +204,14 @@ table, th, td {
                     }
                     echo "<tr>";
                     echo "<td>TOTAL</td>";
+                    $x = 0;
                     foreach($dates as $dateasrow)
                             {
-                                echo "<td></td>";
+                                echo "<td>".$total_products[$dateasrow['Ddate']]."</td>";
+                                $x += $total_products[$dateasrow['Ddate']];
                             }
                    
-                    echo "<td></td>";
+                    echo "<td>".$x."</td>";
                     echo "<td></td>";
                     echo "<td>".$sumtotal."</td>";
                     echo "<tr>";
@@ -207,6 +219,7 @@ table, th, td {
                 
                 </tbody>
               </table>
+              
             </div><!-- /.col -->
           </div><!-- /.row -->
           <!-- this row will not appear when printing -->

@@ -77,6 +77,13 @@ table
 		<?php include('mainheader1.php');?>
         <?php include('mainsidebar1.php');?>
 		
+		<?php 
+            
+            $id = $_GET['id'];
+            $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
+            $f4 = $sql->fetch();
+            $client_id = $id;
+        ?>
 		
 		<div class="content-wrapper">
 	
@@ -116,6 +123,11 @@ table
                   <a href = "#addmul" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Add Multiple Transaction</a>
                   </div><!-- /.box -->
                 </div>
+                <div class="col-md-3">
+                <div class="box-body pad table-responsive">
+                  <a href ="multiple_tran1.php?id=<?php echo $client_id; ?>" class="btn btn-block btn-info btn-lg text-center">Add Multiple Transaction</a>
+                  </div><!-- /.box -->
+                </div>
                 </div>
               </div>
             </div><!-- /.col -->
@@ -123,13 +135,7 @@ table
           
         </section>
 	
-        <?php 
-            
-            $id = $_GET['id'];
-            $sql = $link->query("SELECT * FROM vendors WHERE id ='$id'");
-            $f4 = $sql->fetch();
-            $client_id = $id;
-        ?>
+        
 		
 		<section class="content">
           <div class="row">
@@ -280,7 +286,9 @@ table
                         <th>Total_Cost</th>
                         <th>Date</th>
                         <th>Status</th>
+                        <th>Shift</th>
                         <th>Action</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
@@ -307,6 +315,7 @@ table
                                 <td><? echo $row['Total_Cost']; ?></td>
                                 <td><? echo $row['date']."-".$row['mounth']."-".$row['year']; ?></td>
                                 <td><? echo $row['status']; ?></td>
+                                <td><? echo $row['shift']; ?></td>
         						<td><a href="#edit_tra<? echo $row['id']; ?>" class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
         						    <a href="#delete_tra<? echo $row['id']; ?>" class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Delete</a>
         					    </td>
@@ -362,6 +371,8 @@ table
               </div><!-- /.modal-dialog -->
               </form>
             </div><!-- /.modal --> 
+            
+
 
 
 <div class="modal modal-primary" id="bal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -446,6 +457,15 @@ table
                                                     <option value="Pending">Pending</option>
                                                     <option value="Washed">Washed</option>
                                                     <option value="Delivered">Delivered</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Shift</label>
+                                                <select class="form-control" name="shift">
+                                                    <option value="Morning">Morning</option>
+                                                    <option value="Evening">Evening</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -660,6 +680,15 @@ table
                                                     <option value="Pending">Pending</option>
                                                     <option value="Washed">Washed</option>
                                                     <option value="Delivered">Delivered</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Shift</label>
+                                                <select class="form-control" name="shift">
+                                                    <option value="Morning">Morning</option>
+                                                    <option value="Evening">Evening</option>
                                                 </select>
                                             </div>
                                         </div>

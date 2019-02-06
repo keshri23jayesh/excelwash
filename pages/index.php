@@ -153,16 +153,16 @@
                       foreach($result as $row)
                       {
                         $table_name = $row['transtion_table'];
-                        $day = date("d-m-Y");
+                        $day = date("Y-m-d");
                         $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE Ddate = '$day'";
                         $row_as_produ = $link->prepare($row_as_prod);
                         $row_as_produ->execute();
                         $row_as_product = $row_as_produ->fetchall();
-                        echo $row_as_product["SUM(Total_Cost)"];
+                        //echo $row_as_product["SUM(Total_Cost)"];
                         
-                        foreach($row_as_product as $row):
+                        foreach($row_as_product as $newrow):
                         {
-                            $var += $row['SUM(Total_Cost)'];
+                            $var += $newrow['SUM(Total_Cost)'];
                         }
                         endforeach;
                       }
@@ -212,21 +212,31 @@
                           foreach($result as $row)
                           {
                             $table_name = $row['transtion_table'];
-                            $day = date("d-m-Y");
-                            $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE mounth = '$i'";
+                            //$day = date("d-m-Y");
+                            $year = date("Y");
+                            $len = 0;
+                            $len = strlen($i);
+                            if($len == 1)
+                            $i = "0".$i;   
+                            
+                            $row_as_prod = "SELECT SUM(Total_Cost) FROM $table_name WHERE mounth = '$i' AND year = '$year'";
                             $row_as_produ = $link->prepare($row_as_prod);
                             $row_as_produ->execute();
                             $row_as_product = $row_as_produ->fetchall();
-                            echo $row_as_product["SUM(Total_Cost)"];
+                            //echo $row_as_product["SUM(Total_Cost)"];
+                            //echo $row_as_product;
+                            //print_r($row_as_product);
                             
-                            foreach($row_as_product as $row):
+                            foreach($row_as_product as $jayes):
                             {
-                                $var += $row['SUM(Total_Cost)'];
+                                $var += $jayes['SUM(Total_Cost)'];
+                                //echo "jayes".$var;
+                                
                             }
                             endforeach;
                           }
                       echo "<td>".$var."</td>";
-                      $var = 0;
+                      //$var = 0;
                       //echo $var;
                       echo "</tr>";
                       }
@@ -266,6 +276,11 @@
                 <div class="col-md-3">
                 <div class="box-body pad table-responsive">
                   <a href = "#printdate" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Print b/w Dates</a>
+                  </div><!-- /.box -->
+                </div>
+                <div class="col-md-3">
+                <div class="box-body pad table-responsive">
+                  <a href = "#btwdate" data-toggle = "modal" class="btn btn-block btn-info btn-lg text-center">Transaction b/w Dates</a>
                   </div><!-- /.box -->
                 </div>
                 
@@ -332,8 +347,7 @@
               </div><!-- /.modal-dialog -->
               </form>
             </div><!-- /.modal -->
-          
-          
+            
             <div class="modal modal-primary" id="print" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <form action="invoice.php" method="post" class ="form-group" >
               <div class="modal-dialog">
@@ -368,20 +382,30 @@
                                                 </div>
                                             </div>
                                         
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Shift</label>
+                                                <select class="form-control" name="shift">
+                                                    <option value="Morning">Morning</option>
+                                                    <option value="Evening">Evening</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
                                     
                                         <div class="col-lg-6">
                                                 <div class="form-group">
                                                   <label>Select Mounth</label>
                                                   <select class="form-control" name="mounth">
-                                                    <option value="1">January</option>
-                                                    <option value="2">February</option>
-                                                    <option value="3">March</option>
-                                                    <option value="4">April</option>
-                                                    <option value="5">May</option>
-                                                    <option value="6">June</option>
-                                                    <option value="7">July</option>
-                                                    <option value="8">Augest</option>
-                                                    <option value="9">September</option>
+                                                    <option value="01">January</option>
+                                                    <option value="02">February</option>
+                                                    <option value="03">March</option>
+                                                    <option value="04">April</option>
+                                                    <option value="05">May</option>
+                                                    <option value="06">June</option>
+                                                    <option value="07">July</option>
+                                                    <option value="08">Augest</option>
+                                                    <option value="09">September</option>
                                                     <option value="10">October</option>
                                                     <option value="11">November</option>
                                                     <option value="12">December</option>
@@ -415,8 +439,6 @@
               </div><!-- /.modal-dialog -->
               </form>
             </div><!-- /.modal -->
-            
-            
             
             <div class="modal modal-primary" id="printdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <form action="datewise.php" method="post" class ="form-group" >
@@ -549,6 +571,172 @@
               </form>
             </div><!-- /.modal -->
             
+            <div class="modal modal-primary" id="btwdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <form action="datewise_earning.php" method="post" class ="form-group" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Print b/w dates</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                                <div class="row">
+                                    
+                                        <div class="col-lg-12">
+                                                <div class="form-group">
+                                                  <label>Select Vendor</label>
+                                                  <?php
+                                                          $table_name = "vendors";
+                                                          $table_name = (string)$table_name;
+                                                          $query1 = "SELECT * FROM $table_name";
+                                                          $varible1 = $link->prepare($query1);
+                                                          $varible1->execute();
+                                                          $result = $varible1->fetchAll();
+                                                  ?>
+                                                  
+                                                  <select class="form-control" name="Vendor">
+                                                    <option value="All">All</option>
+                                                  <?php foreach($result as $row): ?>
+                                                    <option value="<? echo $row['Email']; ?>"><? echo $row['Email']; ?></option>
+                                                  <?php endforeach ?>
+                                                  </select>
+                                                  
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select Start Date</label>
+                                                  <select class="form-control" name="startdate">
+                                                  <option value="01">01</option>
+                                                  <option value="02">02</option>
+                                                  <option value="03">03</option>
+                                                  <option value="04">04</option>
+                                                  <option value="05">05</option>
+                                                  <option value="06">06</option>
+                                                  <option value="07">07</option>
+                                                  <option value="08">08</option>
+                                                  <option value="09">09</option>
+                                                  <?php for($i=10; $i<32; $i++) 
+                                                    { 
+                                                    ?>
+                                                    <option value="<? echo $i; ?>"><? echo $i; ?></option>
+                                                  <?php 
+                                                    } 
+                                                    ?>
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select End Date</label>
+                                                  <select class="form-control" name="enddate">
+                                                  <option value="01">01</option>
+                                                  <option value="02">02</option>
+                                                  <option value="03">03</option>
+                                                  <option value="04">04</option>
+                                                  <option value="05">05</option>
+                                                  <option value="06">06</option>
+                                                  <option value="07">07</option>
+                                                  <option value="08">08</option>
+                                                  <option value="09">09</option>
+                                                  <?php for($i=10; $i<32; $i++) 
+                                                    { 
+                                                    ?>
+                                                    <option value="<? echo $i; ?>"><? echo $i; ?></option>
+                                                  <?php 
+                                                    } 
+                                                    ?>
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select Start Mounth</label>
+                                                  <select class="form-control" name="startmounth">
+                                                    <option value="01">January</option>
+                                                    <option value="02">February</option>
+                                                    <option value="03">March</option>
+                                                    <option value="04">April</option>
+                                                    <option value="05">May</option>
+                                                    <option value="06">June</option>
+                                                    <option value="07">July</option>
+                                                    <option value="08">Augest</option>
+                                                    <option value="09">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select End Mounth</label>
+                                                  <select class="form-control" name="endmounth">
+                                                    <option value="01">January</option>
+                                                    <option value="02">February</option>
+                                                    <option value="03">March</option>
+                                                    <option value="04">April</option>
+                                                    <option value="05">May</option>
+                                                    <option value="06">June</option>
+                                                    <option value="07">July</option>
+                                                    <option value="08">Augest</option>
+                                                    <option value="09">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select Start Year</label>
+                                                  <select class="form-control" name="startyear">
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                  </select>
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                  <label>Select End Year</label>
+                                                  <select class="form-control" name="endyear">
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                  </select>
+                                                </div>
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                    <input class="btn btn-outline" type="submit" class ="form-control" value="Print" />
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+              </form>
+            </div><!-- /.modal -->
+            
+            
         
       </div><!-- /.content-wrapper -->
 		
@@ -579,15 +767,9 @@
         interval: 3000 //changes the speed
     })
 </script>
-<script type="text/javascript">
-      $(function () {
-        // Replace the <textarea id="editor1"> with a CKEditor
-        // instance, using default configuration.
-        CKEDITOR.replace('editor1');
-        //bootstrap WYSIHTML5 - text editor
-        $(".textarea").wysihtml5();
-      });
-    </script>
+
+    
+
 
 
 </body>
