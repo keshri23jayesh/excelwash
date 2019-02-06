@@ -1,9 +1,9 @@
 <?php
 /* Database config */
-$db_host		= 'localhost';
-$db_user		= 'biharwq6_user';
-$db_pass		= 'user20182018';
-$db_database	= 'biharwq6_ewm'; 
+$db_host		= '';
+$db_user		= '';
+$db_pass		= '';
+$db_database	= ''; 
 
 /* End config */
 
